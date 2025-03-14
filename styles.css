@@ -100,6 +100,13 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
+/* Add this new style for dark theme title */
+.dark-theme .profile-text h1 {
+    background: linear-gradient(to right, #4361ee, #f72585);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .profile-text h2 {
     font-size: 1.2rem;
     font-weight: 500;
@@ -164,6 +171,11 @@ header {
     gap: 10px;
 }
 
+/* Add this for dark theme section titles */
+.dark-theme .section-title {
+    color: #e0e0e0;
+}
+
 .section-title i {
     color: var(--secondary-color);
 }
@@ -189,6 +201,14 @@ header {
     font-weight: 600;
     color: var(--primary-color);
     margin-bottom: 10px;
+}
+
+/* Add this for dark theme headings */
+.dark-theme .experience-item h4, 
+.dark-theme .project-item h4, 
+.dark-theme .education-item h4,
+.dark-theme .skills-category h4 {
+    color: #e0e0e0;
 }
 
 .experience-item ul, .project-item ul {
