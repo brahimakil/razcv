@@ -339,6 +339,97 @@ header {
     transform: translateY(-2px);
 }
 
+/* Coursework Grid Styles */
+.coursework-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.coursework-item {
+    padding: 15px;
+    background-color: var(--border-color);
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.coursework-item:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.coursework-item h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+}
+
+.coursework-item:hover h4 {
+    color: white;
+}
+
+.coursework-item p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin: 0;
+    color: var(--light-text);
+}
+
+.coursework-item:hover p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Tech Stack Tags for Projects */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.tech-tag {
+    padding: 4px 10px;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+/* Date styling for education */
+.date {
+    font-style: italic;
+    color: var(--secondary-color) !important;
+    font-weight: 500;
+}
+
+/* Dark theme adjustments for new elements */
+.dark-theme .coursework-item {
+    background-color: var(--border-color);
+}
+
+.dark-theme .coursework-item:hover {
+    background-color: var(--secondary-color);
+}
+
+.dark-theme .coursework-item h4 {
+    color: var(--text-color);
+}
+
+.dark-theme .coursework-item p {
+    color: var(--light-text);
+}
+
 .action-buttons {
     position: fixed;
     bottom: 20px;
@@ -437,6 +528,19 @@ header {
     .profile-img {
         width: 150px;
         height: 150px;
+    }
+    
+    .coursework-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tech-stack {
+        justify-content: flex-start;
+    }
+    
+    .tech-tag {
+        font-size: 0.7rem;
+        padding: 3px 8px;
     }
 }
 
